@@ -24,16 +24,27 @@
                                     <constraint firstAttribute="height" constant="128" id="sYa-FI-WVs"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lE1-LA-at4">
+                                <rect key="frame" x="87" y="552" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Iuv-SE-Wos"/>
+                                    <constraint firstAttribute="width" constant="240" id="n8Z-gw-V62"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="lE1-LA-at4" firstAttribute="centerX" secondItem="wGT-xC-Sth" secondAttribute="centerX" id="5M7-6Q-hpp"/>
                             <constraint firstItem="wGT-xC-Sth" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6J1-pH-kC7"/>
                             <constraint firstItem="wGT-xC-Sth" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="CQa-GF-6nU"/>
+                            <constraint firstItem="lE1-LA-at4" firstAttribute="top" secondItem="wGT-xC-Sth" secondAttribute="bottom" constant="35" id="GAX-NN-HKO"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="rotatingView" destination="wGT-xC-Sth" id="x1g-mJ-bJn"/>
+                        <outlet property="rotatingView1" destination="wGT-xC-Sth" id="eAE-4q-WQ0"/>
+                        <outlet property="rotatingView2" destination="lE1-LA-at4" id="qB8-bI-ysI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -44,6 +55,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
